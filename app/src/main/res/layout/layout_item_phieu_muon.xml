@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="24dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/layout_phieuMuon"
+    app:cardCornerRadius="30dp"
+    >
+    
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_yellow_radius_30_top_left_right"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Phiếu mượn"
+                android:textColor="#016463"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_cancel" />
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@+id/img_delete"
+                android:src="@drawable/ic_edit" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_maPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã phiếu mượn"
+            android:textColor="#016463"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+            <TextView
+                android:id="@+id/tv_maTT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="13"
+                android:text="Thủ thư"
+                android:textColor="#016463"
+                android:textSize="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/chk_traSach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Chưa trả sách"
+                android:textColor="#016463"
+                android:textSize="16dp"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+            <TextView
+                android:id="@+id/tv_maTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="13"
+                android:text="Thành viên"
+                android:textColor="#016463"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_tienThue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Tiền thuê: 20000 vnđ"
+                android:textColor="#009688"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+            <TextView
+                android:id="@+id/tv_maSach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="13"
+                android:text="Sách"
+                android:textColor="#016463"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_ngayThue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Ngày thuê: 20-10-2003"
+                android:textColor="#009688"
+                android:textSize="16dp"
+                android:drawablePadding="7dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

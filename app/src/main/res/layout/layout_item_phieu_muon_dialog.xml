@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/bg_white_radius_30"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#016463"
+        android:text="Sách"
+        android:gravity="center"
+        android:background="@drawable/bg_yellow_radius_30_top_left_right"
+        />
+
+    <TextView
+        android:id="@+id/tv_maPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="35dp"
+        android:text="Mã sách: tạo dữ liệu"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+    <Spinner
+        android:id="@+id/spn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:color/transparent"
+        />
+
+    <Spinner
+        android:id="@+id/spn_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/tv_ngayThue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="35dp"
+        android:text="Ngày thuê: dùng gone để ẩn hiện"
+        />
+
+    <TextView
+        android:id="@+id/tv_tienThue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="35dp"
+        android:text="Tiền thuê: chọn sách nó có"
+        />
+
+    <CheckBox
+        android:id="@+id/chk_traSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Đã trả sách"
+        android:textColor="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="35dp"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_dialog"
+            android:layout_gravity="center"
+            android:textColor="#016463"
+            />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="SEND"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_btn_dialog"
+            android:layout_gravity="center"
+            android:textColor="#016463"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

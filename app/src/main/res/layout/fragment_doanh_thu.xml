@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DoanhThuFragment"
+    android:orientation="vertical"
+    android:background="@drawable/anhcute"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:text="Thống kê"
+        android:textStyle="bold"
+        android:textColor="#016463"
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_tuNgay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_ed_dialog"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawablePadding="12dp"
+        android:hint="Từ ngày"
+        android:drawableRight="@drawable/ic_calendar"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_denNgay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_ed_dialog"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawablePadding="16dp"
+        android:hint="Đến ngày"
+        android:drawableRight="@drawable/ic_calendar"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="32dp"
+
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btn_doanh_thu"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/bg_btn_thong_ke"
+            android:text="Doanh thu"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tv_thong_ke"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            >
+            <TextView
+                android:id="@+id/tv_doanhThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 vnđ"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

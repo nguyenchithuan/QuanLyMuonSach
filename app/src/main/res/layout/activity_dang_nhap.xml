@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DangNhapActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_photo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circle_indicatior"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:layout_gravity="center"
+        android:text="Đăng nhập tài khoản"
+        android:textStyle="bold"
+        android:textColor="#016463"
+        />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dangnhap"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight= "25dp"
+        android:layout_marginLeft= "25dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawablePadding="12dp"
+        android:hint="Tên đăng nhập"
+        />
+
+    <TextView
+        android:id="@+id/tv_loi_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#ff00"
+        android:text="Tối thiểu 5 ký tự" />
+
+    <EditText
+        android:id="@+id/edPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dangnhap"
+        android:padding="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight= "25dp"
+        android:layout_marginLeft= "25dp"
+        android:drawableLeft="@drawable/ic_lock_up"
+        android:drawablePadding="12dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/tv_loi_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Mật khẩu không đúng"
+        android:textColor="#ff00"
+        android:layout_marginTop="4dp"
+        />
+    
+    <CheckBox
+        android:id="@+id/chkGhiNho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:text="Nhớ mật khẩu"
+        android:checked="false"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_dang_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_btn_dangnhap"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Forgot password?" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="3"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.4"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="or"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.4"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/google"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/facebook"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/apple"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
+

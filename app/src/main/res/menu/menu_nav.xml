@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_phieu_muon"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="Quản lý phiếu mượn"
+        />
+
+    <item
+        android:id="@+id/ic_loai_sach"
+        android:icon="@drawable/ic_loai_sach"
+        app:showAsAction="always"
+        android:title="Quản lý loại sách"
+        />
+
+    <item
+        android:id="@+id/ic_sach"
+        android:icon="@drawable/ic_book"
+        app:showAsAction="always"
+        android:title="Quản lý sách"
+        />
+
+    <item
+        android:id="@+id/ic_thanhVien"
+        android:icon="@drawable/ic_group"
+        app:showAsAction="always"
+        android:title="Quản lý thành viên"
+        />
+
+    <item android:title="Thống kê">
+        <menu>
+            <item
+                android:id="@+id/ic_top10"
+                android:icon="@drawable/ic_top"
+                app:showAsAction="always"
+                android:title="10 Sách mượn nhiều nhất"
+                />
+
+            <item
+                android:id="@+id/ic_doanh_thu"
+                android:icon="@drawable/ic_money"
+                app:showAsAction="always"
+                android:title="Doanh thu"
+                />
+        </menu>
+    </item>
+
+    <item android:title="Người dùng">
+        <menu>
+            <item
+                android:id="@+id/ic_tao_tai_khoan"
+                android:icon="@drawable/ic_person_add"
+                app:showAsAction="always"
+                android:title="Tạo tài khoản"
+                />
+
+            <item
+                android:id="@+id/ic_doi_mat_khau"
+                android:icon="@drawable/ic_key"
+                app:showAsAction="always"
+                android:title="Đổi mật khẩu"
+                />
+
+            <item
+                android:id="@+id/ic_thoat"
+                android:icon="@drawable/ic_exit"
+                app:showAsAction="always"
+                android:title="Đăng xuất"
+                />
+        </menu>
+    </item>
+
+
+</menu>
